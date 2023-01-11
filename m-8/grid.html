@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        *{
+            margin: 0 ,auto;
+            align-items: center;
+        }
+        body {
+background-color: rgb(0, 25, 135);
+background-repeat: no-repeat;
+
+}
+
+.container {
+border: 2px solid rgb(58, 250, 19);
+display: grid;
+grid-template-columns: repeat(3,100px);
+grid-template-rows: repeat(2,200px);
+gap: 10px;
+/* height: 100%;
+width: 100%; */
+/* width: 1200px; */
+align-items: center;
+justify-content: center;
+border-radius: 10px;
+background-image: linear-gradient(rgba(106, 69, 255, 0), rgb(58, 151, 244));
+
+
+
+}
+
+.box {
+    height: 100px;
+    width: 100%;
+font-size: large;
+font-weight: 700;
+color: black;
+background-image: linear-gradient(rgb(0, 145, 235), rgb(7, 230, 226));
+background-repeat: no-repeat;
+border: 2px solid rgb(255, 47, 47);
+border-radius: 10px;
+
+}
+    </style>
+</head>
+<body>
+    <section class="container">
+        <div class="box b1">box - 1</div>
+        <div class="box b2">box - 2</div>
+        <div class="box b3">box - 3</div>
+        <div class="box b4">box - 4</div>
+        <div class="box b5">box - 5</div>
+        <div class="box b6">box - 6</div>
+    </section>   
+</body>
+</html>

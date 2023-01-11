@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+    <style>
+        body {
+
+            height: 100%;
+            background-color: rgb(0, 25, 135);
+            /* For browsers that do not support gradients */
+            /* background-image: linear-gradient(rgb(14, 0, 141), rgb(7, 85, 230)); */
+            background-repeat: no-repeat;
+            /* justify-items: right; */
+            
+        }
+
+        .container {
+            border: 2px solid rgb(58, 250, 19);
+            display: flex;
+            gap: 10px;
+            height: 200px;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            background-image: linear-gradient(rgba(106, 69, 255, 0), rgb(58, 151, 244));
+
+
+
+        }
+
+        .box {
+            font-size: large;
+            font-weight: 700;
+            color: black;
+            padding: 5px;
+            height: 60px;
+            width: 100%;
+            background-image: linear-gradient(rgb(0, 145, 235), rgb(7, 230, 226));
+            background-repeat: no-repeat;
+            border: 2px solid rgb(255, 47, 47);
+            border-radius: 10px;
+
+        }
+        .b4{
+            /* flex-grow: 1; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box b1">box--1</div>
+        <div class="box b2">box--2</div>
+        <div class="box b3">box--3</div>
+        <div class="box b4">box--4</div>
+    </div>
+
+</body>
+
+</html>

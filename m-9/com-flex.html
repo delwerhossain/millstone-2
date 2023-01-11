@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>com-flex</title>
+    <style>
+        * {
+            margin: 0, auto;
+
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .row {
+            height: 400px;
+            margin-bottom: 5px;
+        }
+
+        .row-sec , .row-third {
+            display: flex;
+            gap: 5px;
+
+        }
+
+        .row-sec > div {
+            flex: 1;
+        }
+
+        .row-third>div {
+            flex: 1;
+        }
+
+        .mid-box-3 {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .part {
+            height: calc(50% - 2.5px);
+
+        }
+
+        .last-box-2 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="row">
+        <img src="./image/a.jpg" alt="">
+    </section>
+    <section class="row row-sec">
+        <div class="mid-box-1"><img src="./image/b.jpg" alt=""></div>
+        <div class="mid-box-2"><img src="./image/c.jpg" alt=""></div>
+        <div class="mid-box-3">
+            <div class="part">
+                <img src="./image/e.jpg" alt="">
+            </div>
+            <div class="part">
+                <img src="./image/f.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="row row-third">
+        <div class="last-box-1"><img src="./image/k.jpg" alt=""></div>
+        <div class="last-box-2">
+            <div class="part1"><img src="./image/h.jpg" alt=""></div>
+            <div class="part1"><img src="./image/h.jpg" alt=""></div>
+            <div class="part1"><img src="./image/h.jpg" alt=""></div>
+            <div class="part1"><img src="./image/h.jpg" alt=""></div>
+        </div>
+        <div class="last-box-3"><img src="./image/i.jpg" alt=""></div>
+    </section>
+</body>
+
+</html>
