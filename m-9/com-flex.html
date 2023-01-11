@@ -18,7 +18,7 @@
         }
 
         .row {
-            height: 400px;
+            /* height: 400px; */
             margin-bottom: 5px;
         }
 
@@ -53,6 +53,27 @@
             grid-template-rows: repeat(2, 1fr);
             gap: 5px;
         }
+        @media screen and (max-width: 576px){
+            .row-sec , .row-third {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+
+        }
+        .last-box-2 {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            /* grid-template-rows: repeat(2, 1fr); */
+            gap: 5px;
+        }
+            
+        }
+        @media screen and (min-width: 577px){
+            .row{
+                height: 400px;
+            }
+        }
+        
     </style>
 </head>
 
