@@ -1,0 +1,112 @@
+        /*---------- grid - area ----------*/
+        .header {
+            grid-area: header;
+        }
+
+        .nav {
+
+            grid-area: nav;
+        }
+
+        .main {
+
+            grid-area: main;
+        }
+
+        .aside {
+            grid-area: aside;
+        }
+
+        .ad {
+            grid-area: ad;
+        }
+
+        .footer {
+            grid-area: footer;
+        }
+
+        .ad,
+        .aside,
+        .footer,
+        .header,
+        .main,
+        .nav {
+            background-color: bisque;
+            border-radius: 10px;
+            justify-items: center;
+
+            padding: 12px;
+        }
+
+        /*---------- grid - area set ----------*/
+
+        .grid-container {
+            display: grid;
+            gap: 20px;
+            grid-template-columns: 1fr 2fr 1fr;
+            grid-template-rows: .3fr 1fr .3fr;
+            grid-template-areas:
+                "header header header"
+                "nav  main aside"
+                "nav  main ad"
+                "footer footer footer"
+            ;
+        }
+
+        @media screen and (max-width:576px) {
+            .grid-container {
+                display: grid;
+                gap: 5px;
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 1fr;
+                grid-template-areas:
+                    "header header "
+                    "nav  nav "
+                    "main main"
+                    "aside ad"
+                    "footer footer"
+                ;
+            }
+
+            .ad,
+            .aside,
+            .footer,
+            .header,
+            .main,
+            .nav {
+                background-color: rgb(254, 167, 60);
+                border-radius: 10px;
+                justify-items: center;
+                padding: 8px;
+            }
+        }
+
+
+
+        @media screen and (min-width:577px) and (max-width:720px) {
+            .grid-container {
+                display: grid;
+                gap: 5px;
+                grid-template-columns: 1fr 2fr;
+                grid-template-rows: .4fr .3fr 1fr .3fr;
+                grid-template-areas:
+                "header header header "
+                "nav  aside aside"
+                "ad main main"
+                "footer footer footer"
+                ;
+            }
+            
+
+            .ad,
+            .aside,
+            .footer,
+            .header,
+            .main,
+            .nav {
+                background-color: rgb(236, 255, 63);
+                border-radius: 10px;
+                justify-items: center;
+                padding: 8px;
+            }
+        }
