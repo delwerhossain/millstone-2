@@ -83,7 +83,7 @@
 
 
 
-        @media screen and (min-width:577px) and (max-width:720px) {
+        @media screen and (min-width:577px) and (max-width:992px) {
             .grid-container {
                 display: grid;
                 gap: 5px;
